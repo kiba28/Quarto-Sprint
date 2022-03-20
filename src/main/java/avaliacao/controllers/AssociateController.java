@@ -32,11 +32,7 @@ public class AssociateController {
 
 	@GetMapping
 	public ResponseEntity<List<AssociateDto>> findAll(@RequestParam(required = false) String politicalOffice) {
-		if (politicalOffice == null) {
-			List<AssociateDto> list = service.findAll();
-			return ResponseEntity.ok(list);
-		}
-		List<AssociateDto> list = service.findByPoliticalOffice(politicalOffice);
+		List<AssociateDto> list = service.findAll(politicalOffice);
 		return ResponseEntity.ok(list);
 	}
 

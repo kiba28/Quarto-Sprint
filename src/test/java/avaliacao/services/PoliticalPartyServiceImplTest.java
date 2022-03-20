@@ -33,10 +33,10 @@ import avaliacao.services.dto.PoliticalPartyWithAssociatesDto;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
-public class PoliticalPartyServiceTest {
+public class PoliticalPartyServiceImplTest {
 
 	@Autowired
-	private PoliticalPartyService service;
+	private PoliticalPartyServiceImpl service;
 
 	@MockBean
 	private PoliticalPartyRepository repository;
@@ -77,6 +77,7 @@ public class PoliticalPartyServiceTest {
 
 		assertThat(partyDto.getId()).isNotNull();
 		assertThat(partyDto.getName()).isEqualTo(party.getName());
+		assertThat(partyDto.getAcronym()).isEqualTo(party.getAcronym());
 		assertThat(partyDto.getIdeology()).isEqualTo(party.getIdeology());
 		assertThat(partyDto.getFoundationDate()).isEqualTo(party.getFoundationDate());
 	}
@@ -92,6 +93,7 @@ public class PoliticalPartyServiceTest {
 
 		assertThat(partyDto.getId()).isNotNull();
 		assertThat(partyDto.getName()).isEqualTo(party.getName());
+		assertThat(partyDto.getAcronym()).isEqualTo(party.getAcronym());
 		assertThat(partyDto.getIdeology()).isEqualTo(party.getIdeology());
 		assertThat(partyDto.getFoundationDate()).isEqualTo(party.getFoundationDate());
 		assertThat(partyDto.getAssociates()).isEqualTo(party.getAssociates());
@@ -107,6 +109,7 @@ public class PoliticalPartyServiceTest {
 
 		assertThat(partyDto.getId()).isNotNull();
 		assertThat(partyDto.getName()).isEqualTo(party.getName());
+		assertThat(partyDto.getAcronym()).isEqualTo(party.getAcronym());
 		assertThat(partyDto.getIdeology()).isEqualTo(party.getIdeology());
 		assertThat(partyDto.getFoundationDate()).isEqualTo(party.getFoundationDate());
 	}
@@ -125,6 +128,7 @@ public class PoliticalPartyServiceTest {
 		
 		assertThat(partyDto.getId()).isNotNull();
 		assertThat(partyDto.getName()).isEqualTo(party.getName());
+		assertThat(partyDto.getAcronym()).isEqualTo(party.getAcronym());
 		assertThat(partyDto.getIdeology()).isEqualTo(party.getIdeology());
 		assertThat(partyDto.getFoundationDate()).isEqualTo(party.getFoundationDate());
 	}

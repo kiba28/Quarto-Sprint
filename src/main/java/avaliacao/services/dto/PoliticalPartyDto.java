@@ -13,6 +13,7 @@ public class PoliticalPartyDto {
 
 	private long id;
 	private String name;
+	private String acronym;
 	private Ideology ideology;
 	@JsonFormat(shape = Shape.STRING, pattern = "dd/MM/yyyy")
 	private LocalDate foundationDate;

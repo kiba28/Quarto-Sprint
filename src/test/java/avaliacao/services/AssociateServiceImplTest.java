@@ -34,10 +34,10 @@ import avaliacao.services.dto.AssociatePartyFormDto;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
-public class AssociateServiceTest {
+public class AssociateServiceImplTest {
 
 	@Autowired
-	private AssociateService service;
+	private AssociateServiceImpl service;
 
 	@MockBean
 	private AssociateRepository repository;
@@ -160,7 +160,7 @@ public class AssociateServiceTest {
 
 		when(this.repository.findAll()).thenReturn(list);
 
-		List<AssociateDto> resultList = this.service.findAll();
+		List<AssociateDto> resultList = this.service.findAll(null);
 
 		assertThat(resultList.size()).isGreaterThan(0);
 		assertThat(resultList.get(0).getName()).isEqualTo(associate.getName());
@@ -173,7 +173,7 @@ public class AssociateServiceTest {
 
 		when(this.repository.findBypoliticalOffice(PoliticalOffice.Presidente)).thenReturn(list);
 
-		List<AssociateDto> resultList = this.service.findByPoliticalOffice("Presidente");
+		List<AssociateDto> resultList = this.service.findAll("Presidente");
 
 		assertThat(resultList.size()).isGreaterThan(0);
 		assertThat(resultList.get(0).getName()).isEqualTo(associate.getName());

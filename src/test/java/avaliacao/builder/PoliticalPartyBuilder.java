@@ -12,7 +12,8 @@ public final class PoliticalPartyBuilder {
 	public static PoliticalParty getPoliticalParty() {
 		PoliticalParty politicalParty = new PoliticalParty();
 		politicalParty.setId(1L);
-		politicalParty.setName("PT");
+		politicalParty.setName("Partido dos Trabalhadores");
+		politicalParty.setAcronym("PT");
 		politicalParty.setIdeology(Ideology.Centro);
 		politicalParty.setFoundationDate(LocalDate.now());
 		
@@ -22,7 +23,8 @@ public final class PoliticalPartyBuilder {
 	public static PoliticalPartyDto getPoliticalPartyDto() {
 		PoliticalPartyDto politicalParty = new PoliticalPartyDto();
 		politicalParty.setId(1L);
-		politicalParty.setName("PT");
+		politicalParty.setName("Partido dos Trabalhadores");
+		politicalParty.setAcronym("PT");
 		politicalParty.setIdeology(Ideology.Centro);
 		politicalParty.setFoundationDate(LocalDate.now());
 		
@@ -31,7 +33,8 @@ public final class PoliticalPartyBuilder {
 	
 	public static PoliticalPartyFormDto getPoliticalPartyFormDto() {
 		PoliticalPartyFormDto politicalParty = new PoliticalPartyFormDto();
-		politicalParty.setName("PT");
+		politicalParty.setName("Partido dos Trabalhadores");
+		politicalParty.setAcronym("PT");
 		politicalParty.setIdeology(Ideology.Centro);
 		politicalParty.setFoundationDate(LocalDate.now());
 		
@@ -41,7 +44,8 @@ public final class PoliticalPartyBuilder {
 	public static PoliticalPartyWithAssociatesDto getPoliticalPartyWithAssociatesDto() {
 		PoliticalPartyWithAssociatesDto politicalParty = new PoliticalPartyWithAssociatesDto();
 		politicalParty.setId(1L);
-		politicalParty.setName("PT");
+		politicalParty.setName("Partido dos Trabalhadores");
+		politicalParty.setAcronym("PT");
 		politicalParty.setIdeology(Ideology.Centro);
 		politicalParty.setFoundationDate(LocalDate.now());
 		

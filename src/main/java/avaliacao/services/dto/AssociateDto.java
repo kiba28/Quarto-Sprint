@@ -19,6 +19,6 @@ public class AssociateDto {
 	@JsonFormat(shape = Shape.STRING, pattern = "dd/MM/yyyy")
 	private LocalDate birthDate;
 	private Gender gender;
-	private PoliticalParty PoliticalParty;
+	private PoliticalParty politicalParty;
 
 }

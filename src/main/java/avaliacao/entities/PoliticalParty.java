@@ -19,7 +19,6 @@ import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import avaliacao.entities.enums.Ideology;
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,7 +26,6 @@ import lombok.Setter;
 
 @Entity
 @NoArgsConstructor
-@AllArgsConstructor
 @Setter
 @Getter
 @EqualsAndHashCode
@@ -40,6 +38,8 @@ public class PoliticalParty implements Serializable {
 	@Column(nullable = false)
 	private String name;
 	@Column(nullable = false)
+	private String acronym;
+	@Column(nullable = false)
 	@Enumerated(EnumType.STRING)
 	private Ideology ideology;
 	@Column(nullable = false)
@@ -49,8 +49,9 @@ public class PoliticalParty implements Serializable {
 	@OneToMany(mappedBy = "politicalParty")
 	private List<Associate> associates = new ArrayList<>();
 
-	public PoliticalParty(String name, Ideology ideology, LocalDate foundationDate) {
+	public PoliticalParty(String name, String acronym, Ideology ideology, LocalDate foundationDate) {
 		this.name = name;
+		this.acronym = acronym;
 		this.ideology = ideology;
 		this.foundationDate = foundationDate;
 	}

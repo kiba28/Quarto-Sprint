@@ -19,6 +19,8 @@ public class PoliticalPartyFormDto {
 
 	@NotEmpty(message = "Name is required")
 	private String name;
+	@NotEmpty(message = "Name is required")
+	private String acronym;
 	@NotNull(message = "Ideology is required")
 	private Ideology ideology;
 	@NotNull(message = "Foundation date is required")
@@ -26,13 +28,14 @@ public class PoliticalPartyFormDto {
 	private LocalDate foundationDate;
 
 	public PoliticalParty convert() {
-		return new PoliticalParty(this.name, this.ideology, this.foundationDate);
+		return new PoliticalParty(this.name, this.acronym, this.ideology, this.foundationDate);
 	}
 
 	public PoliticalParty update(long id, PoliticalPartyRepository partyRepository) {
 		PoliticalParty politicalParty = partyRepository.findById(id)
 				.orElseThrow(() -> new DefaultException(404, "NOT_FOUND", "Political Party not found"));
 		politicalParty.setName(this.name);
+		politicalParty.setAcronym(this.acronym);
 		politicalParty.setIdeology(this.ideology);
 		politicalParty.setFoundationDate(this.foundationDate);
 		return politicalParty;
