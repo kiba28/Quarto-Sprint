@@ -33,7 +33,7 @@ public class AssociateServiceImpl implements AssociateService {
 			List<Associate> list = associateRepository.findAll();
 			return list.stream().map(associate -> mapper.map(associate, AssociateDto.class)).collect(Collectors.toList());
 		} else {
-			List<Associate> list = associateRepository.findBypoliticalOffice(PoliticalOffice.valueOf(politicalOffice));
+			List<Associate> list = associateRepository.findByPoliticalOffice(PoliticalOffice.valueOf(politicalOffice));
 			return list.stream().map(associate -> mapper.map(associate, AssociateDto.class)).collect(Collectors.toList());
 		}	
 	}

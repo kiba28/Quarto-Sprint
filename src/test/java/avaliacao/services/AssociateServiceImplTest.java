@@ -171,7 +171,7 @@ public class AssociateServiceImplTest {
 		Associate associate = AssociateBuilder.getAssociate();
 		List<Associate> list = Arrays.asList(associate);
 
-		when(this.repository.findBypoliticalOffice(PoliticalOffice.Presidente)).thenReturn(list);
+		when(this.repository.findByPoliticalOffice(PoliticalOffice.Presidente)).thenReturn(list);
 
 		List<AssociateDto> resultList = this.service.findAll("Presidente");
 

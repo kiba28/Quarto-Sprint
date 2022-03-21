@@ -9,6 +9,6 @@ import avaliacao.entities.enums.PoliticalOffice;
 
 public interface AssociateRepository extends JpaRepository<Associate, Long> {
 
-	List<Associate> findBypoliticalOffice(PoliticalOffice politicalOffice);
+	List<Associate> findByPoliticalOffice(PoliticalOffice politicalOffice);
 
 }
