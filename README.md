@@ -29,7 +29,7 @@ Faça o build do projeto para que todas as dependencias sejam baixas.
 Execute o projeto.
 ```
 
-Com o projeto rodando, pode se testar de pois modos:
+Com o projeto rodando, pode se testar de dois modos:
 
 ```
 Utilizando o Postman, ou qualquer programa para realizar requisições.
@@ -50,7 +50,7 @@ Exemplo de POST para um associado:
 
 ## ⚙️ Executando os testes
 
-Os testes foram feitos utilizando modulo do Spring para tests com JUnit Jupiter, todos os testes foram feitos utilizando mocks. Então para executa-los basta estar em um sistema que seja possivel subir o ambiente spring.
+Os testes foram feitos utilizando modulo do Spring para tests com JUnit Jupiter, e todos foram escritos utilizando mocks. Então para executa-los basta estar em um sistema que seja possivel subir o ambiente spring.
 
 ### 🔩 Cobertura dos testes
 
