@@ -55,7 +55,7 @@ Os testes foram feitos utilizando modulo do Spring para tests com JUnit Jupiter,
 
 ### 🔩 Cobertura dos testes
 
-Os testes combrem a camada de serviços do projeto, e testam todas as funcionalidades lá inseridas.
+Os testes cobrem a camada de serviços do projeto, e testam todas as funcionalidades lá inseridas.
 
 ## 🛠️ Construído com
 
