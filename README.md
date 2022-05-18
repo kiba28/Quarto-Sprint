@@ -58,8 +58,6 @@ Os testes cobrem a camada de serviços do projeto, e testam todas as funcionalid
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
 * [Maven](https://maven.apache.org/) - Gerente de Dependência
 * [Spring Boot](https://spring.io/projects/spring-boot) - Criação e inicialização do projeto.
 * [JUnit 5](https://junit.org/junit5/) - Utilizado para realizar os testes.
