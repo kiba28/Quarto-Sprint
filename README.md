@@ -21,13 +21,12 @@ Git - para clonar o repósitorio, porém também é póssivel baixar como zip.
 
 Por ser uma API monolítica, a instalação consiste em:
 
-
 Tendo os pre-requisitos instalados, basta seguir os passos abaixo:
 
 ```
-Importar o projeto para a IDE escolhida.
-Fazer o build do projeto para que todas as dependencias sejam baixas.
-Execultar o projeto.
+Importe o projeto para a IDE escolhida.
+Faça o build do projeto para que todas as dependencias sejam baixas.
+Execute o projeto.
 ```
 
 Com o projeto rodando, pode se testar de pois modos:
